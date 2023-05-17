@@ -1,0 +1,6 @@
+.main {
+  height: 100%;
+
+  display: grid;
+  grid-template: calc(100vh - 40px) / 480px auto;
+}

@@ -1,0 +1,41 @@
+.contact-search-bar {
+  background: #202c33;
+  height: 36px;
+
+  padding: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+
+  &__input {
+    box-sizing: border-box;
+    height: 36px;
+    width: 100%;
+    padding: 0 32px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  &__button {
+    cursor: pointer;
+
+    height: 36px;
+
+    background: #91f1d4;
+    border-radius: 8px;
+    border: none;
+
+    font-weight: 600;
+
+    transition: all linear 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}

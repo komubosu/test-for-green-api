@@ -1,0 +1,37 @@
+.contacts {
+  background: #111b21;
+
+  &__chats {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 60px);
+  }
+
+  &__chat {
+    cursor: pointer;
+
+    padding: 12px 20px;
+    border: {
+      bottom: 1px solid #8696a026;
+    }
+
+    color: #dff3ed;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+
+    transition: all linear 0.2s;
+
+    &:hover {
+      background: #2a394259;
+    }
+
+    &_type {
+      &_active {
+        background: #2a3942 !important;
+      }
+    }
+  }
+}
